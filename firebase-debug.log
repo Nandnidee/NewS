@@ -1,0 +1,39 @@
+[debug] [2023-10-12T21:28:49.336Z] ----------------------------------------------------------------------
+[debug] [2023-10-12T21:28:49.348Z] Command:       F:\NodeJS\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-10-12T21:28:49.350Z] CLI Version:   12.7.0
+[debug] [2023-10-12T21:28:49.351Z] Platform:      win32
+[debug] [2023-10-12T21:28:49.352Z] Node Version:  v16.15.0
+[debug] [2023-10-12T21:28:49.478Z] Time:          Fri Oct 13 2023 02:58:49 GMT+0530 (India Standard Time)
+[debug] [2023-10-12T21:28:49.478Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-12T21:28:49.680Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-12T21:28:49.681Z] > authorizing via signed-in user (deepikaasingh89@gmail.com)
+[debug] [2023-10-12T21:28:49.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-10-12T21:28:50.995Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-10-12T21:28:50.995Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-10-12T21:28:51.071Z] TypeError: Cannot read properties of undefined (reading 'value')
+    at ListPrompt.getCurrentValue (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\inquirer\lib\prompts\list.js:145:53)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\map.js:10:37
+    at OperatorSubscriber._this._next (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at OperatorSubscriber.Subscriber.next (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\take.js:15:32
+    at OperatorSubscriber._this._next (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at OperatorSubscriber.Subscriber.next (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at Interface.handler (C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\observable\fromEvent.js:59:31)
+    at Interface.emit (node:events:539:35)
+    at Interface.emit (node:domain:475:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-10-12T21:29:04.351Z] ----------------------------------------------------------------------
+[debug] [2023-10-12T21:29:04.358Z] Command:       F:\NodeJS\node.exe C:\Users\LENOVO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-10-12T21:29:04.360Z] CLI Version:   12.7.0
+[debug] [2023-10-12T21:29:04.361Z] Platform:      win32
+[debug] [2023-10-12T21:29:04.362Z] Node Version:  v16.15.0
+[debug] [2023-10-12T21:29:04.365Z] Time:          Fri Oct 13 2023 02:59:04 GMT+0530 (India Standard Time)
+[debug] [2023-10-12T21:29:04.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-12T21:29:04.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-12T21:29:04.624Z] > authorizing via signed-in user (deepikaasingh89@gmail.com)
+[debug] [2023-10-12T21:29:04.639Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-10-12T21:29:06.047Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-10-12T21:29:06.048Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]

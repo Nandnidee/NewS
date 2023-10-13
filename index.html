@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/95cdbd4cff.js" crossorigin="anonymous"></script>
+    <title>NEWS</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+<div class="main ">
+    <nav>
+    <div class="nav-bar flex">
+       <i class="fa-solid fa-2xl fa-newspaper" onclick="re()" style="color: #ffffff;"> n e w s </i>
+        <div class="mid_nav">
+            <ul>
+                <a href="#" class="links" id="IPL" onclick="onNavItemClick('IPL')">IPL</a>
+                <a href="#" class="links" id="Finance" onclick="onNavItemClick('Finance')">Finance</a>
+                <a href="#" class="links" id="Politics" onclick="onNavItemClick('Politics')">Politics</a>
+                <a href="#" class="links" id="Technology" onclick="onNavItemClick('Technology')">Technology</a>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text " id="inp" class="text" placeholder="eg. Technology">
+             <a href="#" class="button" id="search-butn">Search</a>
+        </div>
+    </div>
+</nav>
+<div class="container flex card-container " id="con">
+    
+</div>
+<template id="template-card">
+        <div class="card ">
+            <div class="card-head">
+                    <img src="https://via.placeholder.com/400x200" alt="image" id="img">
+                </div>
+                <div class="card-contain"> 
+                    <h3 id="news-title">Title</h3>
+                    <h4 class="news-source" id="news-source">6/6/2023</h4>
+                    <div class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cupiditate autem placeat totam labore reprehenderit minima atque et libero voluptatem sit sint unde, modi illo quis similique repellendus eaque assumenda!</div>
+                </div>
+                
+            
+        </div>
+  
+    
+    </template>
+</div>
+<script src="script.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDO_CfjIp8KydngIghM__l47zVcVCZ9enA",
+      authDomain: "news-fbd6a.firebaseapp.com",
+      projectId: "news-fbd6a",
+      storageBucket: "news-fbd6a.appspot.com",
+      messagingSenderId: "680438441246",
+      appId: "1:680438441246:web:270bc8240e07c7ca01550f",
+      measurementId: "G-GKHRKQQ9K9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>
