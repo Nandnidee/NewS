@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+@media (max-width: 1000px) {
+    .links {
+        display: none;
+    }
+}
 body{
     background-color: black; 
 }
@@ -9,8 +14,9 @@ body{
     background-color: rgb(42, 40, 40);
     padding: 20px;
     z-index: 1;
-    height: 30px;
-    justify-content: space-between;
+    min-height: 30px;
+    row-gap: 20px;
+    justify-content: space-around;
 }
 .flex{
     display: flex;
@@ -31,11 +37,12 @@ a:hover{
     text-decoration: underline;
     font-size: 1.55rem;
 }
-.links:active{
-    color: rgb(187, 183, 183);
+#img{
+    height: 200px;
 }
-.links.active{
-    text-decoration: double;
+.active{
+    text-decoration: underline;
+    font-weight: 700;
 }
 .button{
     background-color: rgb(255, 252, 252);
@@ -58,12 +65,14 @@ a:hover{
   max-width: 1180px;
   margin-inline: auto;
   overflow: hidden;
+  justify-content: space-around;
 }
+
 .card{
     width: 350px;
-    min-height: 400px;
+    max-height: 400px;
     border-radius: 5px;
-    overflow: hidden;
+    overflow:hidden;
     margin: 20px;
 }
 
@@ -76,8 +85,10 @@ a:hover{
     border-radius: 5px;
 }
 .card:hover{
-    transform: translateY(-2px);
-    box-shadow: 1px 1px 10px rgb(243, 230, 230);
+    transform: translateZ(-3px);
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 10px rgb(89, 87, 87);
+    transition: all 0.3s;
 }
 .news-des{
     padding: 2px;

@@ -1,10 +1,11 @@
-const key="88a60de6d3784c1b9b963a2b2ca4196b";
-const url="https://newsapi.org/v2/everything?q=";
-
+const key="9639faf63445cfff0595422d24ff4237";
+const url="https://gnews.io/api/v4/search?q=";
+let cur=null;
 window.addEventListener("load",()=>fetchNews("India"));
 async function fetchNews(query){
-   const res=await fetch(`${url}${query}&apiKey=${key}`);
+   const res= await fetch(`${url}${query}&apikey=${key}`);
    const data = await res.json();
+   console.log(data);
    binddata(data.articles);
    
 }
@@ -15,7 +16,7 @@ function binddata(articles){
    card_container.innerHTML=' ';
 
    articles.forEach((article)=> {
-      if(!article.urlToImage) return;
+      if(!article.image) return;
       const cardclone=news.content.cloneNode(true);
       fillDataInCard(cardclone,article);
       card_container.appendChild(cardclone)
@@ -27,7 +28,7 @@ function fillDataInCard(cardclone,article){
    const newscr=cardclone.querySelector('#news-source');
    const newdesc=cardclone.querySelector('#news-desc');
 
-   newimg.src=article.urlToImage;
+   newimg.src=article.image;
    newtitle.innerHTML=article.title;
    newdesc.innerHTML=article.description;
 
@@ -39,11 +40,12 @@ function fillDataInCard(cardclone,article){
    })
 }
 
-let cur=null;
+
 function onNavItemClick(id){
    fetchNews(id);
    const navItem =document.getElementById(id);
-   cur?.classList.remove('active');
+   if(cur.classList.contain('active'))
+   cur.classList.remove('active');
    cur=navItem;
    cur.classList.add('active');
 }
@@ -55,8 +57,9 @@ but.addEventListener("click",()=>{
    const query = inp.value;
    if(!query) return;
    fetchNews(query);
-   cur?.classList.remove('active');
-   cur=null;
+   if(cur.classList.contain('active'))
+   cur.classList.remove('active');
+   cur=NULL;
 })
 function re(){
    fetchNews('india');
