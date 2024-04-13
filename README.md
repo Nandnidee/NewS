@@ -1,9 +1,10 @@
-<a href="https://nandnidee.github.io/NewS/"> 
-# News - Your Go-To News Website
-</a>
+# [News - Your Go-To News Website](https://nandnidee.github.io/NewS/)
+
 News is a modern and user-friendly news website built with HTML, CSS, JavaScript, and integrated with a News API. Stay updated with the latest headlines from around the world with Newsify.
 
-![Newsify Homepage](assets/images/homepage.png)
+![Search results for "IPL"](https://github.com/Nandnidee/NewS/assets/99739856/5fa183bd-92c6-4d5c-822a-382a2fec076b)
+
+*Search results for "IPL"*
 
 ## Features
 
@@ -11,14 +12,6 @@ News is a modern and user-friendly news website built with HTML, CSS, JavaScript
 - **Search Functionality**: Easily search for news articles based on keywords.
 - **Responsive Design**: Optimized for both mobile and desktop views.
 - **User-Friendly Interface**: Intuitive design for seamless navigation.
-
-## Screenshots
-
-![Homepage](assets/images/screenshot1.png)
-*Homepage displaying top headlines*
-
-![Search Results](assets/images/screenshot2.png)
-*Search results for "technology"*
 
 ## Tech Stack
 
@@ -28,6 +21,7 @@ News is a modern and user-friendly news website built with HTML, CSS, JavaScript
 ## API Integration
 
 We are using the [News API](https://newsapi.org/) to fetch news articles.
+
 
 
 
